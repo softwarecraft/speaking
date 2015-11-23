@@ -1,0 +1,31 @@
+<style type="text/css">
+.ms-formtable td.ms-formbody,   /* cell containing all form fields */
+.ms-formtable td.ms-formlabel   /* cell containing all form labels */
+{
+  display: block;
+  width: auto;
+  padding: .5em 1em;
+}
+
+.ms-formtable td *              /* resize everything inside the cells */   
+{
+  width: 100%;
+}
+
+.ms-formtable tr                /* by default, make form fields 50% width */
+{
+  width: 50%;
+  float: left;
+}
+
+.ms-formtable tr:nth-child(1),  /* title */
+.ms-formtable tr:nth-child(2),  /* assigned to */
+.ms-formtable tr:nth-child(5),  /* client */
+.ms-formtable tr:nth-child(6),  /* description */
+.ms-formtable tr:nth-child(9),  /* due date */
+.ms-formtable tr:nth-child(10),  /* related */
+.ms-formtable tr:nth-child(11)  /* comments */
+{
+  width: 100%;
+}
+</style>

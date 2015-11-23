@@ -1,0 +1,20 @@
+/* OOTB New, Display, Edit forms */
+
+/* SharePoint 2013 On-premises */
+<style type="text/css">
+  /* Can be combined in more specific selector */
+  h3.ms-standardheader { text-align: right; padding-right: 10px; }
+  /* Must apply both class selectors to override same selector in corev15.css */
+  .ms-formlabel h3.ms-standardheader { font-weight:bold; }
+  .ms-formlabel h3.ms-standardheader:after { content : ":"; }  
+</style>
+
+/* SharePoint Online */
+/* Ancestor selectors not required: table.ms-formtable td.ms-formlabel */
+<style type="text/css">
+  /* Must apply text-align to a block element, eg TD as SPAN is an in-line element */
+  td.ms-formlabel { text-align: right; }
+  /* Must apply font-weight to SPAN element as corev15.css defines font-weight for ms-standardheader */
+  span.ms-h3.ms-standardheader { font-weight:bold; padding-right: 10px; }
+  span.ms-h3.ms-standardheader:after { content : ":"; }
+</style>

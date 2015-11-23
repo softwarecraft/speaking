@@ -1,0 +1,40 @@
+/* SharePoint Online */
+/* Ancestor selectors not required: table.ms-formtable td.ms-formlabel */
+<style type="text/css">
+  /* Must apply text-align to a block element, eg TD as SPAN is an in-line element */
+  td.ms-formlabel { text-align: right; }
+  /* Must apply font-weight to SPAN element as corev15.css defines font-weight for ms-standardheader */
+  span.ms-h3.ms-standardheader { font-weight:bold; padding-right: 10px; }
+  span.ms-h3.ms-standardheader:after { content : " :"; }
+</style>
+<style type="text/css">
+.ms-formtable td.ms-formbody,   /* cell containing all form fields */
+.ms-formtable td.ms-formlabel   /* cell containing all form labels */
+{
+  display: block;
+  width: auto;
+  padding: .5em 1em;
+}
+
+.ms-formtable td *              /* resize everything inside the cells */   
+{
+  width: 100%;
+}
+
+.ms-formtable tr                /* by default, make form fields 50% width */
+{
+  width: 50%;
+  float: left;
+}
+
+.ms-formtable tr:nth-child(1),  /* title */
+.ms-formtable tr:nth-child(2),  /* assigned to */
+.ms-formtable tr:nth-child(5),  /* client */
+.ms-formtable tr:nth-child(6),  /* description */
+.ms-formtable tr:nth-child(9),  /* due date */
+.ms-formtable tr:nth-child(10),  /* related */
+.ms-formtable tr:nth-child(11)  /* comments */
+{
+  width: 100%;
+}
+</style>
